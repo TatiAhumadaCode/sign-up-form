@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* main div container  */
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #222;
+}
+
+/* odin's logo side bar */
+.side-bar {
+    width: 335px;
+    min-height: 643px;
+    background: center url('unplash.jpg') no-repeat;
+    background-size: cover;
+}
+
+.img-side {
+    width: 335px;
+    height: auto;
+    margin-top: 116px;
+    background-color: rgba(6, 6, 6, 0.6);
+}
+
+.img-side > div {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+img[src] {
+    width: 20%;
+    height: auto;
+}
+
+.odin-text {
+    font-family: 'Norse-Bold';
+    font-size: 55px;
+    color: white;
+}
+
+/* text, inputs and button div section */
+.main-content {
+    width: 650px;
+    padding: 100px 0px 0px 20px;
+    background-color: white;
+}
+
+/* all divs have this class in order to give lateral spaces */
+.box {
+    padding: 0px 20px;
+}
+
+/* div text  */
+.text-box {
+    height: 160px;
+}
+
+.text-box p {
+    font-size: 20px;
+    margin: 15px 2px;
+}
+
+span { font-style: italic; }
+
+/* inputs section  */
+.input-box {
+    min-height: 190px;
+    -webkit-box-shadow: 6px 7px 9px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 7px 9px -9px rgba(0,0,0,0.75);
+    box-shadow: 6px 7px 9px -9px rgba(0,0,0,0.75);
+}
+
+.input-box > p {
+    margin: 10px 2px;
+    font-size: 25px;
+}
+
+/* we divide the form section in two parts in order to organize the inputs */
+form { display: flex; }
+
+label { display: block; }
+
+label > p {
+    margin: 0 2px;
+    font-size: 10px;
+}
+
+input {
+    width: 162px;
+    height: 20px;
+    margin: 2px;
+    border: 1px solid #E5E7EB;
+    border-radius: 2px;
+}
+
+/* the margin is for give an space between the two sections of input's div */
+
+.section-1 {
+    margin-right: 50px;
+}
+
+button {
+    width: 145px;
+    height: 32px;
+    margin: 20px 0px;
+    background-color: #596D48;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+/* pseudoclases  */
+
+input:focus {
+    border: blue;
+    -webkit-box-shadow: 6px 7px 13px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 7px 13px -9px rgba(0,0,0,0.75);
+    box-shadow: 6px 7px 13px -9px rgba(0,0,0,0.75);
+}
+
